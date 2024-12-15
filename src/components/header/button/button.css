@@ -1,0 +1,22 @@
+.menu-btn {
+  outline: thin solid var(--second-color);
+  background-color: var(--first-color);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: var(--third-color);
+}
+
+.menu-btn svg {
+  fill: var(--second-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+}

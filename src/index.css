@@ -1,3 +1,25 @@
+:root {
+  --first-color: #001130;
+  --first-alpha-color: #0a004bab;
+  --second-color: rgb(200, 189, 252);
+  --second-alpha-color: rgba(22, 51, 216, 0.247);
+  --third-color: #501464;
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --white-alpha-color: #bcdbff6c;
+  --white-color: #FFF;
+  --gray-light-color: #F3F3F3;
+  --gray-color: #CCC;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --black-alpha-color: rgba(0,0,0,0.3);
+  --link-color: #509EE3;
+  --title-color: #333;
+  --text-color: #222;
+  --font: 'Montserrat', sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+
 * {
   margin: 0;
   padding: 0;

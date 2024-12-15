@@ -1,0 +1,15 @@
+.logo {
+  background-color: var(--first-color);
+  min-width: max-content;
+}
+
+.logo a:hover {
+  color: var(--second-color);
+}
+
+.logo a {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+}
