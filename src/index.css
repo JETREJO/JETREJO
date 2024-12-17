@@ -11,7 +11,9 @@
   --gray-color: #CCC;
   --gray-dark-color: #666;
   --black-color: #000;
-  --black-alpha-color: rgba(0,0,0,0.3);
+  /* --black-alpha-color: rgba(0,0,0,0.3); */
+  --black-alpha-color: rgba(0,0,0,0.5);
+  --yellow-color: rgb(215, 230, 104);
   --link-color: #509EE3;
   --title-color: #333;
   --text-color: #222;

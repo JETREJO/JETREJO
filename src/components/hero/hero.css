@@ -9,7 +9,7 @@
 /* Esto se usa en ambas Hero Image */
 .hero-image-opacity {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,12 @@
   font-size: 7vw;
   margin-bottom: 2rem;
   color: var(--white-color);
+}
+
+.hero-image-subtitle {
+  font-size: 5vw;
+  margin-bottom: 2rem;
+  color: var(--yellow-color);
 }
 
 .main-btn {
@@ -38,9 +44,11 @@
   border: solid 2px;
   border-color: #CCC;
   transition: 200ms ease;
+  margin-bottom: 40px;
 }
 
 #hero-btn:hover {
   transform: scale(1.12);
+  border-color: var(--yellow-color);
   transition: 200ms ease;
 }

@@ -17,7 +17,7 @@ const Header = () => {
       <section className="container">
         <HeaderLogo/>
         <HeaderButton setMenuActive={() => toggleMenuActive()} isMenuActive={isActive}/>
-        <HeaderMenu isMenuActive={isActive}/>
+        <HeaderMenu isMenuActive={isActive} handleMenuActive={() => toggleMenuActive()}/>
       </section>
     </header>
   );
