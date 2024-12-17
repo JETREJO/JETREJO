@@ -1,0 +1,18 @@
+.button {
+  border-radius: 5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+  transition: 200ms ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  border-color: var(--yellow-color);
+  background-color: var(--first-color-lighter);
+}

@@ -1,5 +1,6 @@
 :root {
   --first-color: #001130;
+  --first-color-lighter: #1E2F4E;
   --first-alpha-color: #0a004bab;
   --second-color: rgb(200, 189, 252);
   --second-alpha-color: rgba(22, 51, 216, 0.247);

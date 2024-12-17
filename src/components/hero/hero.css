@@ -1,5 +1,5 @@
 .hero-image {
-  background-image: url(/public/static/images/Hero_1280x720_Comprimida.png);
+  background-image: url(/public/images/Hero_1280x720_Comprimida.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,12 +20,14 @@
 .hero-image-title {
   font-size: 7vw;
   margin-bottom: 2rem;
+  font-weight: 800;
   color: var(--white-color);
 }
 
 .hero-image-subtitle {
-  font-size: 5vw;
+  font-size: 4vw;
   margin-bottom: 2rem;
+  font-weight: 300;
   color: var(--yellow-color);
 }
 

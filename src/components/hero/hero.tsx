@@ -7,7 +7,7 @@ const Hero = () => {
       <article className="hero-image">
         <aside className="hero-image-opacity">
           <div className="hero-image-content">
-            <h3 className="hero-image-subtitle">Web Developer 🤖</h3>
+            <h3 className="hero-image-subtitle">Web Developer</h3>
             <h2 className="hero-image-title">Javier Trejo</h2>
             <a href="#contacto" className="main-btn" id="hero-btn">
               CONTÁCTAME

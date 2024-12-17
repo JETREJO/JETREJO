@@ -1,0 +1,86 @@
+.sectionWrapper {
+	/* border: 5px solid red; */
+	height: fit-content;
+	min-height: 400px;
+	width: 60vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	margin-bottom: 150px;
+}
+
+.sectionWrapper > h2 {
+	margin: 2rem auto;
+	padding: 0.6rem 1rem;
+	text-align: center;
+	border-top: thin solid black;
+	border-bottom: thin solid black;
+	max-width: 400px;
+	min-width: 250px;
+}
+
+.sectionWrapper > .infoContainer {
+	/* border: 2px solid blue; */
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+.photoWrapper {
+	width: fit-content;
+	height: fit-content;
+	/* border: 1px solid blue; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.photoWrapper > img {
+	width: 320px;
+	height: 320px;
+}
+
+.descriptionWrapper {
+	/* border: 1px solid black; */
+	width: 460px;
+	height: fit-content;
+}
+
+.descriptionWrapper > p {
+	background-color: var(--first-color-lighter);
+	color: white;
+	padding: 20px;
+	border-radius: 20px;
+	line-height: 26px;
+}
+
+.highlighted {
+	color: var(--yellow-color);
+	font-weight: 700;
+}
+
+.media {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 20px 0;
+}
+
+.media > a > svg {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	padding: 3px;
+	fill: var(--first-color);
+}
+
+.media > a > svg:hover {
+	fill: var(--first-alpha-color);
+}
+
+.github {
+	padding: 0px !important;
+}
+
