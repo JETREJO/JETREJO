@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { CardDate } from "../../../Interfaces";
 import ExperienceCardDate from "../cardDate/cardDate";
 import ExperienceCardLink from "../cardLink/cardLink";
@@ -17,12 +17,12 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ( {children, title, imgURL, imgAlt, url, client, startDate, endDate} ) => {
 
-  // const [hover, setHover] = useState<boolean>(false);
+  const [hover, setHover] = useState<boolean>(false);
 
   return (
-    // <article className={styles.cardContainer} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-    <article className={styles.cardContainer}>
-      <img src={imgURL} alt={imgAlt} />
+    <article className={styles.cardContainer} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+    {/* <article className={styles.cardContainer}> */}
+      <img src={imgURL} alt={imgAlt} className={hover ? styles.cardImgHover : styles.cardImg}/>
       <div className={styles.imgOverlay}>
         <span>{title}</span>
       </div>
