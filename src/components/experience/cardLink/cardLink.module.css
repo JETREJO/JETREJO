@@ -1,0 +1,24 @@
+.cardLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardLink:hover {
+  transform: scale(1.04);
+}
+
+.cardLink:hover span {
+  font-weight: 500;
+}
+
+.cardLink span {
+  font-size: 13px;
+  color: var(--first-color-lighter);
+}
+
+.cardLink svg {
+  fill: var(--first-color);
+  width: 18px;
+}

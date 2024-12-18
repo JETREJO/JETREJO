@@ -1,0 +1,7 @@
+.date {
+  font-size: 13px;
+}
+
+.date>span {
+  font-weight: 600;
+}
