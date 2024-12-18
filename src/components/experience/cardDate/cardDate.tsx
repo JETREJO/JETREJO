@@ -59,10 +59,10 @@ const ExperienceCardDate: React.FC<DateProps> = ( {startDate, endDate} ) => {
           </p>
         );
       }
-      else { return (<></>); }
+      else { return ( <div></div> ); }
     }
     else {
-      return (<></>);
+      return (<div></div>);
     }
   };
 

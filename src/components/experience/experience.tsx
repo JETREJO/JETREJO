@@ -4,7 +4,7 @@ import styles from "./experience.module.css";
 const Experience = () => {
   return (
     <div className={styles.sectionContainer} id="experience">
-      <h3>Experience</h3>
+      <h2>Experience</h2>
       <section>
           <ExperienceCard
             title="Sky México"
@@ -50,8 +50,32 @@ const Experience = () => {
             startDate={{day: "", month: "December", year:"2021"}}>
               Página que desarrollé como práctica para una supuesta 
               marca de café, inspirada en la página de Nescafé 
-              de ese momento. Hecha solo con HTML y CSS, aplicando Responsive Design
+              de ese momento. Hecha solo con HTML y CSS, destacando el Responsive Design
           </ExperienceCard>
+
+          <ExperienceCard
+            title="Landing Page: Portfolio"
+            imgURL="/public/images/test-lulu-04.png"
+            imgAlt="Portfolio Banner JT."
+            url="https://github.com/JETREJO/JETREJO"
+            startDate={{day: "", month: "December", year:"2024"}}>
+              Landing Page tipo Portafolio la cual actualicé recientemente 
+              usando tecnologías como React, Vite y TypeScript, 
+              ya que la primera versión estaba construida con solo 
+              HTML, CSS y Vanilla JavasCript.
+          </ExperienceCard>
+
+          <ExperienceCard
+            title="Proyectos: GitHub"
+            imgURL="/public/images/test-lulu-04.png"
+            imgAlt="Portfolio Banner JT."
+            url="https://github.com/JETREJO">
+              En mi portal de GitHub cuento con algunos 
+              proyectos que he realizado en mis ratos libres o incluso 
+              hay algunos interesantes que realicé en la universidad, 
+              con tecnologpías como C#, Bash Scripting, Assembly, entre otras.
+          </ExperienceCard>
+
       </section>
     </div>
   );

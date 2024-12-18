@@ -6,10 +6,10 @@
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
 }
 
-.sectionContainer h3 {
+.sectionContainer h2 {
     margin: 2rem auto;
     padding: 0.6rem 1rem;
     text-align: center;
@@ -26,4 +26,7 @@
     flex-wrap: wrap;
     gap: 50px;
     margin: 0 auto;
+
+    min-width: 850px;
+    justify-content: center;
 }

@@ -1,0 +1,26 @@
+.sectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px auto 70px;
+  justify-content: center;
+  max-width: 60vw;
+}
+
+.sectionContainer h2 {
+  padding: 0.6rem 1rem;
+  text-align: center;
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  max-width: 400px;
+  min-width: 300px;
+  font-size: 24px;
+  margin: 92px 0 92px;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

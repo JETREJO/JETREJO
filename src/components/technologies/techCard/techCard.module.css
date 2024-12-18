@@ -1,0 +1,39 @@
+.stackCard, .stackCardLong {
+  border: 3px solid var(--first-color-lighter);
+  border-radius: 20px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.stackCardLong {
+  width: 50vw;
+  min-width: 500px;
+  max-width: 850px;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.stackCard {
+  min-width: 400px;
+  max-width: 400px;
+  flex-grow: 3;
+  margin: 20px;
+}
+
+.cardTitle {
+  background-color: var(--white-color);
+  text-align: center;
+  font-size: 24px;
+  padding: 1rem 0;
+}
+
+.iconsContainer {
+  background-color: var(--first-color-lighter);
+  color: var(--white-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+}

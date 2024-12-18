@@ -4,7 +4,9 @@ const HeaderLogo = () => {
 
   return (
     <div className="logo">
-      <a href="index.html">Javier Trejo</a>
+      <button type="button" onClick={() => scrollTo(0,0)}>
+        Javier Trejo
+      </button>
     </div>
   );
   
