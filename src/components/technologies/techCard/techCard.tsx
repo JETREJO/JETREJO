@@ -12,7 +12,7 @@ const TechCard: React.FC<TechCardProps> = ( {title, techStack} ) => {
     <article className={(techStack.length > 8) ? styles.stackCardLong : styles.stackCard}>
       <h4 className={styles.cardTitle}>{title}</h4>
       <ul className={styles.iconsContainer}>
-        { techStack.map((tech) => <TechIconItem techName={tech}/>) }
+        { techStack.map((tech) => <TechIconItem techName={tech} key={`Tech-${tech}`}/>) }
       </ul>
     </article>
   );

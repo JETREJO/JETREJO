@@ -1,0 +1,104 @@
+.sectionContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/public/images/HeroCerts_1280x720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: var(--hero-attachment);
+}
+
+.heroOverlay {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--white-alpha-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  /* border: 2px solid black; */
+  width: fit-content;
+  height: fit-content;
+}
+
+.contentWrapper > h2 {
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  margin: 2rem auto;
+  padding: 0.6rem 1rem;
+  max-width: 400px;
+  min-width: 250px;
+  text-align: center;
+  color: black;
+}
+
+.sliderContainer {
+  width: 800px;
+  height: 390px;
+  background-color: var(--white-alpha-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slidesCarrousel {
+  /* Total de Slides x 100% */
+  width: 400%;
+  display: flex;
+  list-style: none;
+  transition: transform 500ms ease-in-out;
+}
+
+.slide {
+  min-width: 800px;
+  max-width: 800px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide > svg, .slide > img {
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.slide > p {
+  margin: 20px 40px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.slide > h5 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--first-color);
+  text-align: center;
+}
+
+.slide > a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.heroDotsContainer {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.heroDotsContainer > input {
+  margin: 0 6px;
+  cursor: pointer;
+  background-color: var(--first-color);
+}
