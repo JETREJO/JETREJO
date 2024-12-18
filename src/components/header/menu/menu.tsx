@@ -10,9 +10,8 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ isMenuActive, handleMenuActive 
   return (
     <>
       <nav className={`menu ${(isMenuActive) ? "is-active" : ""}`} >
-        <a href="#inicio">Home</a>
-        <a href="#experience">Experience</a>
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#stack">Stack</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>

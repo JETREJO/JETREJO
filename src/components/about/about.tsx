@@ -36,7 +36,7 @@ const RESUMEE_URL = "/public/certifications/JavierTrejo-Resumee.pdf";
 const About = () => {
 
   return (
-    <section className={styles.sectionWrapper}>
+    <section className={styles.sectionWrapper} id="about">
 
       <h2>About me</h2>
 

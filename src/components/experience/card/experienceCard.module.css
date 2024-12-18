@@ -1,0 +1,82 @@
+.cardContainer {
+  /* border: thin solid var(--first-color); */
+  border-radius: 12px;
+  width: 400px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--white-color);
+  transition: all 250ms ease;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.cardContainer:hover {
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.6);
+}
+
+.cardContainer > img {
+  height: 140px;
+  width: 100%;
+}
+
+.cardInfo {
+  height: 20px;
+}
+
+.cardDescription {
+  /* background-color: green; */
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px 20px 2px;
+
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardFooter {
+  height: 32px;
+  font-size: 14px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.date > span {
+  font-weight: 600;
+}
+
+.cardLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardLink:hover {
+  transform: scale(1.04);
+}
+
+.cardLink:hover span{
+  font-weight: 500;
+}
+
+.cardLink span {
+  font-size: 13px;
+  color: var(--first-color-lighter);
+}
+
+.cardLink svg {
+  fill: var(--first-color);
+  width: 18px;
+}
