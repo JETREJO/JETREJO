@@ -26,15 +26,40 @@ const ExperienceCardDate: React.FC<DateProps> = ( {startDate, endDate} ) => {
       );
     }
     else if (startDate && !endDate) {
-      const parsedStartDate = `${startDate.year}/${startDate.month}/${startDate.day}`;
-      return (
-        <p className={styles.date}>
-          <span>Date: </span>
-          <time dateTime={parsedStartDate}>
-            {`${startDate.day}-${startDate.month}-${startDate.year}`}
-          </time>
-        </p>
-      );
+      if (startDate.day && startDate.month && startDate.year) {
+        const parsedStartDate = `${startDate.year}/${startDate.month}/${startDate.day}`;
+        return (
+          <p className={styles.date}>
+            <span>Date: </span>
+            <time dateTime={parsedStartDate}>
+              {`${startDate.day}-${startDate.month}-${startDate.year}`}
+            </time>
+          </p>
+        );
+      }
+      else if (!startDate.day && startDate.month && startDate.year) {
+        const parsedStartDate = `${startDate.year}/${startDate.month}/01`;
+        return (
+          <p className={styles.date}>
+            <span>Date: </span>
+            <time dateTime={parsedStartDate}>
+              {`${startDate.month}-${startDate.year}`}
+            </time>
+          </p>
+        );
+      }
+      else if (!startDate.day && !startDate.month && startDate.year) {
+        const parsedStartDate = `${startDate.year}/01/01`;
+        return (
+          <p className={styles.date}>
+            <span>Year: </span>
+            <time dateTime={parsedStartDate}>
+              {startDate.year}
+            </time>
+          </p>
+        );
+      }
+      else { return (<></>); }
     }
     else {
       return (<></>);

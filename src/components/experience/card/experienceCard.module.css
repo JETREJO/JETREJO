@@ -1,8 +1,10 @@
 .cardContainer {
   /* border: thin solid var(--first-color); */
+  position: relative;
   border-radius: 12px;
   width: 400px;
-  height: 230px;
+  /* height: 230px; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -20,12 +22,32 @@
   width: 100%;
 }
 
-.cardInfo {
-  height: 20px;
+.imgOverlay {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 80px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0) 100%);
+  color: var(--white-color);
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+
+.imgOverlay > span{
+  padding: 0 0 8px 20px;
 }
 
 .cardDescription {
-  /* background-color: green; */
+  height: fot-content;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 12px 20px 2px;
+}
+
+.cardDescriptionClamped {
   height: 50px;
   font-size: 14px;
   font-weight: 400;

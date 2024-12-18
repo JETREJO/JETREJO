@@ -18,7 +18,10 @@ const ExperienceCardLink: React.FC<CardLinkProps> = ( {url, client} ) => {
     }
     else if (client) {
       return (
-        <span>Cliente: {client}</span>
+        <p>
+          <span style={{fontWeight: 600}}>Cliente: </span>
+          <span>{client}</span>
+        </p>
       );
     }
     else if (!client && !url) {
