@@ -2,8 +2,8 @@ import { MEDIA_ICONS } from "../../dictionaries/media";
 import EllipticalButton from "../buttons/elliptical/ellipticalButton";
 import styles from "./about.module.css";
 
-const PHOTO_URL = "/public/images/about-photo-test.png";
-const RESUMEE_URL = "/public/certifications/JavierTrejo-Resumee.pdf";
+const PHOTO_URL = `${import.meta.env.BASE_URL}/images/about-photo-test.png`;
+const RESUMEE_URL = `${import.meta.env.BASE_URL}/certifications/JavierTrejo-Resumee.pdf`;
 
 const About = () => {
 

@@ -1,4 +1,5 @@
 import { CardDate } from "../Interfaces";
+import { Base_URL } from "./certifications";
 
 export type JOBS = "SKY" | "INDRA" | "CEE" | "LULU" | "PORTFOLIO" | "GITHUB";
 
@@ -25,7 +26,7 @@ export interface JobInfo {
 export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   SKY: {
     title: "Sky México",
-    imgURL: "/public/images/test-sky-02.png",
+    imgURL: `${Base_URL}/images/test-sky-02.png`,
     imgAlt: "Sky México Aplicación Sky Más",
     url: "https://www.skymas.mx/webclient/#/login",
     startDate: {day: "15", month: "06", year:"2022"},
@@ -34,7 +35,7 @@ export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   },
   CEE: {
     title: "Consultoría Educativa Especializada",
-    imgURL: "/public/images/test-cee-02.png",
+    imgURL: `${Base_URL}/images/test-cee-02.png`,
     imgAlt: "Consultoría Educativa Especializada CDMX",
     url: "https://jetrejo.github.io/CEE/",
     startDate: {day: "", month: "March", year:"2024"},
@@ -42,7 +43,7 @@ export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   },
   INDRA: {
     title: "Indra Sistemas México",
-    imgURL: "/public/images/test-indra-01.png",
+    imgURL: `${Base_URL}/images/test-indra-01.png`,
     imgAlt: "Imagen Indra Sistemas México",
     url: undefined,
     client: "BBVA",
@@ -52,7 +53,7 @@ export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   },
   LULU: {
     title: "Lu-Lu Coffee Beans",
-    imgURL: "/public/images/test-lulu-04.png",
+    imgURL: `${Base_URL}/images/test-lulu-04.png`,
     imgAlt: "Lu-Lu Coffee Beans Banner",
     url: "https://jt070.github.io/LandingPage_MaryCoffeeBrand/",
     startDate: {day: "", month: "December", year:"2021"},
@@ -60,7 +61,7 @@ export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   },
   PORTFOLIO: {
     title: "Landing Page: Portfolio",
-    imgURL: "/public/images/test-lulu-04.png",
+    imgURL: `${Base_URL}/images/test-lulu-04.png`,
     imgAlt: "Portfolio Banner JT.",
     url: "https://github.com/JETREJO/JETREJO",
     startDate: {day: "", month: "December", year:"2024"},
@@ -68,7 +69,7 @@ export const EXPERIENCE_INFO: Record<JOBS, JobInfo> = {
   },
   GITHUB: {
     title: "Proyectos: GitHub",
-    imgURL: "/public/images/test-lulu-04.png",
+    imgURL: `${Base_URL}/images/test-lulu-04.png`,
     imgAlt: "Portfolio Banner JT.",
     url: "https://github.com/JETREJO",
     description: "En mi portal de GitHub cuento con algunos proyectos que he realizado en mis ratos libres o incluso hay algunos interesantes que realicé en la universidad, con tecnologpías como C#, Bash Scripting, Assembly, entre otras."

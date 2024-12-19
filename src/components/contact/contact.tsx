@@ -2,7 +2,7 @@ import { CONTACT_ICONS } from "../../dictionaries/contact";
 import { MEDIA_ICONS } from "../../dictionaries/media";
 import EllipticalButton from "../buttons/elliptical/ellipticalButton";
 import styles from "./contact.module.css";
-const RESUMEE_URL = "/public/certifications/JavierTrejo-Resumee.pdf";
+const RESUMEE_URL = `${import.meta.env.BASE_URL}/certifications/JavierTrejo-Resumee.pdf`;
 
 const Contact = () => {
   return (
