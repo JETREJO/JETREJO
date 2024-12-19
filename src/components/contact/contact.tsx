@@ -44,7 +44,7 @@ const Contact = () => {
               type="button"
               style={{
                 border: "transparent",
-                margin: "20px 0 100px",
+                margin: "20px 0 50px",
                 fontWeight: "700",
                 color: "white",
               }}>

@@ -81,3 +81,25 @@
   transform: scale(1.15);
 	fill: var(--first-alpha-color);
 }
+
+@media (width < 1200px) {
+  .sectionContainer {
+    height: fit-content;
+  }
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (width < 600px) {
+  .contentWrapper > h2 {
+    max-width: 200px;
+    min-width: 180px;
+    font-size: 20px;
+  }
+  .contentWrapper {
+    min-width: 250px;
+  }
+}
