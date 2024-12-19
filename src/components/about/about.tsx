@@ -16,7 +16,7 @@ const About = () => {
         <article className={styles.photoWrapper}>
           <img src={PHOTO_URL} alt="Fotgrafía JT" />
           <a href={RESUMEE_URL} target="_blank" rel="noopener noreferrer">
-            <EllipticalButton style={{fontSize: "16px", border:"transparent"}}>
+            <EllipticalButton style={{fontSize: "15px", border:"transparent", fontWeight: "600"}}>
               View Resumee
             </EllipticalButton>
           </a>

@@ -1,78 +1,133 @@
 .sectionWrapper {
-	height: fit-content;
-	min-height: 400px;
-	width: 60vw;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	gap: 100px;
-	margin-bottom: 150px;
-	padding-top: 60px;
+  height: fit-content;
+  min-height: 400px;
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 150px;
+  padding-top: 60px;
 }
 
 .sectionWrapper > h2 {
-	margin: 2rem auto;
-	padding: 0.6rem 1rem;
-	text-align: center;
-	border-top: thin solid black;
-	border-bottom: thin solid black;
-	max-width: 400px;
-	min-width: 250px;
+  margin: 2rem auto;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  max-width: 400px;
+  min-width: 250px;
 }
 
 .sectionWrapper > .infoContainer {
-	display: flex;
-	justify-content: center;
-	gap: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .photoWrapper {
-	width: fit-content;
-	height: fit-content;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .photoWrapper > img {
-	width: 320px;
-	height: 320px;
+  width: 320px;
+  height: 320px;
 }
 
 .descriptionWrapper {
-	width: 460px;
-	height: fit-content;
+  width: 460px;
+  height: fit-content;
 }
 
 .descriptionWrapper > p {
-	background-color: var(--first-color-lighter);
-	color: white;
-	padding: 20px;
-	border-radius: 20px;
-	line-height: 26px;
+  background-color: var(--first-color-lighter);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 26px;
 }
 
 .highlighted {
-	color: var(--yellow-color);
-	font-weight: 700;
+  color: var(--yellow-color);
+  font-weight: 700;
 }
 
 .media {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
 }
 
 .media > a > svg {
-	width: 50px;
-	height: 50px;
-	object-fit: contain;
-	padding: 3px;
-	fill: var(--first-color);
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 3px;
+  fill: var(--first-color);
 }
 
 .media > a > svg:hover {
-	fill: var(--first-alpha-color);
+  fill: var(--first-alpha-color);
+}
+
+@media (width < 1000px) {
+  .sectionWrapper {
+    width: 100%;
+    padding: 0 30px;
+    gap: 60px;
+    margin-bottom: 70px;
+  }
+  .sectionWrapper > .infoContainer {
+    align-items: center;
+  }
+  .photoWrapper > img {
+    width: 200px;
+    height: 200px;
+  }
+  .media {
+    gap: 15px;
+  }
+  .media > a > svg {
+    width: 36px;
+    height: 36px;
+    transition: 150ms ease;
+  }
+  .media > a > svg:hover {
+    transform: scale(1.15);
+  }
+  .descriptionWrapper {
+    width: fit-content;
+    height: fit-content;
+  }
+  .descriptionWrapper > p {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (width < 600px) {
+  .sectionWrapper {
+    gap: 24px;
+  }
+  .sectionWrapper > .infoContainer {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .descriptionWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sectionWrapper > h2 {
+    min-width: 100px;
+    font-size: 20px;
+    white-space: nowrap;
+  }
 }
