@@ -5,6 +5,7 @@
   margin: 0px auto 70px;
   justify-content: center;
   max-width: 60vw;
+  min-width: 885px;
 }
 
 .sectionContainer h2 {
@@ -23,4 +24,25 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (width < 1000px) {
+  .sectionContainer {
+    width: 80vw;
+    min-width: 400px;
+  }
+}
+
+@media (width < 600px) {
+  .sectionContainer {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: 180px;
+  }
+  .sectionContainer h2 {
+    max-width: 300px;
+    min-width: 200px;
+    font-size: 20px;
+    margin: 60px 0 40px;
+  }
 }

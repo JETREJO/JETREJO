@@ -39,3 +39,29 @@
   justify-content: center;
   gap: 36px;
 }
+
+@media (width < 1000px) {
+  .stackCardLong, .stackCard {
+    width: 100%;
+    min-width: 400px;
+    max-width: 850px;
+    margin: 20px 0;
+  }
+}
+
+@media (width < 600px) {
+  .stackCardLong, .stackCard {
+    width: 100%;
+    min-width: 200px;
+    max-width: 850px;
+    margin: 20px 10px;
+  }
+  .cardTitle {
+    font-size: 18px;
+    padding: .5rem 0;
+  }
+  .iconsContainer {
+    padding: 30px 12px;
+    gap: 25px 30px;
+  }
+}
