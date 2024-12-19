@@ -1,0 +1,14 @@
+.heroDotsContainer {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.heroDotsContainer > input {
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+.heroDotsContainer > input:hover {
+  transform: scale(1.3);
+}

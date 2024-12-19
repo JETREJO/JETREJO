@@ -1,76 +1,71 @@
 import { useState } from "react";
-import { LINUX_ICON } from "../technologies/IconsTechList";
 import styles from "./certifications.module.css";
+import CertificationSlides from "./slide/slide";
+import { LINUX_ICON } from "../technologies/IconsTechList";
+import SliderDots from "./sliderDots/sliderDots";
+import { Certification } from "../../Interfaces";
 
-const CERT_IMG_LINUX = LINUX_ICON;
+const CERTIFICATIONS: Certification[] = [
+  {
+    title: "Linux",
+    img: LINUX_ICON,
+    dedscription: "Taller en donde se vio a profundidad temas de Linux, como la terminal, el sistema de ficheros, gestores de paquetes y comandos importantes.",
+    srcPath: "/public/certifications/Certification-Linux.pdf",
+  },
+  {
+    title: "Sistemas Operativos",
+    img: <img src="/public/images/cert-ssoo.png" />,
+    dedscription: "Curso que trató principalmente de programación enfocada a sistemas operativos con lenguajes de bajo nivel así como el correcto funcionamiento de estos.",
+    srcPath: "/public/certifications/Certification-SSOO.pdf",
+  },
+  {
+    title: "Oracle",
+    img: <img src="/public/images/cert-oracle.jpg" />,
+    dedscription: "Introducción al servicio de Bases de Datos que ofrece la empresa de Oracle.",
+    srcPath: "/public/certifications/Certification-Oracle.pdf",
+  },
+  {
+    title: "Criptografía Visual",
+    img: <img src="/public/images/cert-matlab.png" />,
+    dedscription: "Taller donde se explicó qué es la criptografía visual y se demostró con un algoritmo para encriptar documentos físicos usando MatLab.",
+    srcPath: "/public/certifications/Certification-MatLab.pdf",
+  },
+];
+
+const PERCENTAGE_TO_MOVE = 100 / CERTIFICATIONS.length;
+const SLIDER_WIDTH = CERTIFICATIONS.length * 100;
 
 const Certifications = () => {
 
   const [indexActive, setIndexActive] = useState<number>(0);
+  const [translation, setTranslation] = useState<number>(0);
+
+  const setCarrouselMove = (index:number) => {
+    const newTranslation = PERCENTAGE_TO_MOVE * (index * -1);
+    setTranslation(newTranslation);
+    setIndexActive(index);
+  };
 
   return (
     <section className={styles.sectionContainer} id="certifications">
       <div className={styles.heroOverlay}>
-
         <article className={styles.contentWrapper}>
           <h2>Certifications</h2>
           <div className={styles.sliderContainer}>
-
             <ul className={styles.slidesCarrousel}
               style={{
-                transform : (indexActive === 0)
-                  ? "translateX(0%)"
-                  : (indexActive === 1)
-                    ? "translateX(-25%)"
-                    : (indexActive === 2)
-                      ? "translateX(-50%)"
-                      : (indexActive === 3)
-                        ? "translateX(-75%)"
-                        : ""
-              }}   >
-
-              <li className={styles.slide}>
-                { CERT_IMG_LINUX }
-                <p>Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion</p>
-                <h5>Title</h5>
-                <a href="" rel="noopener noreferrer">Ver certificado</a>
-              </li>
-
-              <li className={styles.slide}>
-                <img src="/public/images/about-photo-test.png" alt="" />
-                <p>Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion</p>
-                <h5>Title</h5>
-                <a href="" rel="noopener noreferrer">Link</a>
-              </li>
-
-              <li className={styles.slide}>
-                { CERT_IMG_LINUX }
-                <p>Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion</p>
-                <h5>Title</h5>
-                <a href="" rel="noopener noreferrer">Ver certificado</a>
-              </li>
-
-              <li className={styles.slide}>
-                <img src="/public/images/about-photo-test.png" alt="" />
-                <p>Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion</p>
-                <h5>Title</h5>
-                <a href="" rel="noopener noreferrer">Link</a>
-              </li>
-
+                transform: `translateX(${translation}%)`,
+                width:`${SLIDER_WIDTH}%`
+              }} >
+              <CertificationSlides certifications={CERTIFICATIONS}/>
             </ul>
-
-            <div className={styles.heroDotsContainer}>
-              <input type="radio" name="slides" id="slide-1" checked={indexActive === 0} onChange={() => setIndexActive(0)} />
-              <input type="radio" name="slides" id="slide-2" checked={indexActive === 1} onChange={() => setIndexActive(1)} />
-              <input type="radio" name="slides" id="slide-3" checked={indexActive === 2} onChange={() => setIndexActive(2)} />
-              <input type="radio" name="slides" id="slide-4" checked={indexActive === 3} onChange={() => setIndexActive(3)} />
-            </div>
-
+            <SliderDots
+              certifications={CERTIFICATIONS}
+              indexActive={indexActive}
+              setCarrouselMove={setCarrouselMove}/>
           </div>
         </article>
-
       </div>
-
     </section>
   );
 }
