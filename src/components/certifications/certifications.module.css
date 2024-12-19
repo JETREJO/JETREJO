@@ -48,3 +48,22 @@
   list-style: none;
   transition: transform 500ms ease-in-out;
 }
+
+@media (width < 900px) {
+  .sliderContainer {
+    width: 500px;
+    gap: 15px;
+    height: 350px;
+  }
+}
+
+@media (width < 600px) {
+  .sliderContainer {
+    width: 300px;
+  }
+  .contentWrapper > h2 {
+    max-width: 210px;
+    min-width: 210px;
+    font-size: 20px;
+  }
+}

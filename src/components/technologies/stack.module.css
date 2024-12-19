@@ -35,8 +35,8 @@
 
 @media (width < 600px) {
   .sectionContainer {
-    width: 90vw;
-    max-width: 90vw;
+    width: 80vw;
+    max-width: 85vw;
     min-width: 180px;
   }
   .sectionContainer h2 {

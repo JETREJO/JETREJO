@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -39,4 +40,37 @@
 .slide > a:hover {
   transform: scale(1.05);
   color: var(--first-color-lighter);
+}
+
+@media (width < 900px) {
+  .slide {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .slide>svg, .slide>img {
+    width: 120px;
+    height: 120px;
+  }
+  .slide > p {
+    margin: 10px 40px 4px;
+    font-size: 14px;
+  }
+}
+
+@media (width < 600px) {
+  .slide {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .slide>svg, .slide>img {
+    width: 110px;
+    height: 110px;
+  }
+  .slide > p {
+    margin: 10px 20px 4px;
+    font-size: 13px;
+  }
+  .slide > a {
+    margin-bottom: 0;
+  }
 }

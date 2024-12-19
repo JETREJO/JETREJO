@@ -54,3 +54,38 @@
   border-color: var(--yellow-color);
   transition: 200ms ease;
 }
+
+@media (width < 600px) {
+  .hero-image {
+    background-image: url(/public/images/Hero_Mobile.png);
+  }
+  .hero-image-title {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
+  .hero-image-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .main-btn {
+    width: 150px;
+    font-size: 12px;
+    padding: 12px;
+  }
+  #hero-btn:hover {
+    transform: scale(1.08);
+  }
+}
+
+@media (width < 400px) {
+  .hero-image-title {
+    white-space: nowrap;
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  .hero-image-subtitle {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+}
