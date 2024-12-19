@@ -21,7 +21,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ( {children, title, imgURL
 
   return (
     <article className={styles.cardContainer} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-    {/* <article className={styles.cardContainer}> */}
       <img src={imgURL} alt={imgAlt} className={hover ? styles.cardImgHover : styles.cardImg}/>
       <div className={styles.imgOverlay}>
         <span>{title}</span>

@@ -15,7 +15,7 @@ const Contact = () => {
 
           <div className={styles.contactCard}>
             { CONTACT_ICONS.ubication }
-            <p className={styles.cardTitle}>UBICATION</p>
+            <p className={styles.cardTitle}>LOCATION</p>
             <p className={styles.cardDescription}>Mexico City</p>
           </div>
 

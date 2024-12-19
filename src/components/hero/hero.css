@@ -1,5 +1,5 @@
 .hero-image {
-  background-image: url(/public/images/Hero_1280x720_Comprimida.png);
+  background-image: url(/public/images/Hero_1280x720_Comprimida.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -57,7 +57,10 @@
 
 @media (width < 600px) {
   .hero-image {
-    background-image: url(/public/images/Hero_Mobile.png);
+    background-image: url(/public/images/Hero_Mobile.webp);
+  }
+  .hero-image-opacity {
+    background-color: var(--black-alpha-color-lighter);
   }
   .hero-image-title {
     font-size: 50px;

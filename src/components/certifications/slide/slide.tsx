@@ -13,7 +13,7 @@ const CertificationSlides: React.FC<CertificationSlidesProps> = ({certifications
           <p>{certification.dedscription}</p>
           <h5>{certification.title}</h5>
           <a href={certification.srcPath} rel="noopener noreferrer" target="_blank">
-            Ver certificado
+            Open certificate
           </a>
         </li>
       )

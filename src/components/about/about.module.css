@@ -75,6 +75,7 @@
 
 .media > a > svg:hover {
   fill: var(--first-alpha-color);
+  transform: scale(1.1);
 }
 
 @media (width < 1000px) {
