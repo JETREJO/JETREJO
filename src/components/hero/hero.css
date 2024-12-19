@@ -60,6 +60,7 @@
   .hero-image {
     background-image: url(/public/images/Hero_Mobile.webp);
     object-fit: contain;
+    background-attachment: scroll;
   }
   .hero-image-opacity {
     background-color: var(--black-alpha-color-lighter);
