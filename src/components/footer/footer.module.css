@@ -1,0 +1,14 @@
+.footerContainer {
+  height: 64px;
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer > h6 {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
