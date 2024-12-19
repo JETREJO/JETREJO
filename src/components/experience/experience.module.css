@@ -30,7 +30,11 @@
 }
 
 @media (width < 900px) {
+  /* .sectionContainer {
+    width: 85vw;
+  } */
   .sectionContainer section {
+    width: 80vw;
     min-width: 400px;
   }
 }

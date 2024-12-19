@@ -22,3 +22,13 @@
   fill: var(--first-color);
   width: 18px;
 }
+
+@media (width < 600px) {
+  .cardLink span {
+    color: var(--white-color);
+    text-decoration: underline;
+  }
+  .cardLink svg {
+    fill: white;
+  }
+}
