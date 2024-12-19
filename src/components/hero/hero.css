@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  object-fit: contain;
 }
 
 /* Esto se usa en ambas Hero Image */
@@ -58,6 +59,7 @@
 @media (width < 600px) {
   .hero-image {
     background-image: url(/public/images/Hero_Mobile.webp);
+    object-fit: contain;
   }
   .hero-image-opacity {
     background-color: var(--black-alpha-color-lighter);
