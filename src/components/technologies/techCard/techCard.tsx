@@ -1,4 +1,4 @@
-import { TECH_LIST } from "../IconsTechList";
+import { TECH_LIST } from "../../../dictionaries/IconsTechList";
 import TechIconItem from "../item/TechIconItem";
 import styles from "./techCard.module.css";
 

@@ -1,10 +1,6 @@
-import { TECH_LIST } from "./IconsTechList";
+import { BACKEND_STACK, FRONTEND_STACK, TOOLS_STACK } from "../../dictionaries/techStack";
 import styles from "./stack.module.css";
 import TechCard from "./techCard/techCard";
-
-const FRONTEND_STACK: TECH_LIST[] = [ "HTML", "CSS", "TypeScript", "React", "Angular", "SASS", "Figma", "JavaScript", "Bootstrap", "Material UI", "Angular Material", "jQuery"];
-const BACKEND_STACK: TECH_LIST[] = ["PHP", "Laravel", "Next JS", "Node JS", "MySQL", "PostgreSQL", "Apache"];
-const TOOLS_STACK: TECH_LIST[] = ["Git", "GitHub", "Terminal", "Linux", "VS Code", "npm", "Postman", "Photoshop"];
 
 const Stack = () => {
   return (

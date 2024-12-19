@@ -1,4 +1,4 @@
-import { SVGLIST, TECH_LIST } from "../IconsTechList";
+import { SVGLIST, TECH_LIST } from "../../../dictionaries/IconsTechList";
 import styles from "./TechIconItem.module.css";
 
 interface TechIconItemProps {
