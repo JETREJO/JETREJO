@@ -1,32 +1,48 @@
 .sectionContainer {
-    background-color: var(--gray-light-color);
-    height: fit-content;
-    padding-top: 60px;
-    padding-bottom: 80px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  background-color: var(--gray-light-color);
+  height: fit-content;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .sectionContainer h2 {
-    margin: 2rem auto;
-    padding: 0.6rem 1rem;
-    text-align: center;
-    border-top: thin solid black;
-    border-bottom: thin solid black;
-    max-width: 400px;
-    min-width: 250px;
-    font-size: 24px;
+  margin: 2rem auto;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  max-width: 400px;
+  min-width: 250px;
+  font-size: 24px;
 }
 
 .sectionContainer section {
-    width: 60vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: 0 auto;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 auto;
+  min-width: 850px;
+  justify-content: center;
+}
 
-    min-width: 850px;
-    justify-content: center;
+@media (width < 900px) {
+  .sectionContainer section {
+    min-width: 400px;
+  }
+}
+
+@media (width < 600px) {
+  .sectionContainer section {
+    min-width: 180px;
+  }
+  .sectionContainer h2 {
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 170px;
+    font-size: 20px;
+  }
 }
